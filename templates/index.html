@@ -8,16 +8,17 @@
 <body>
     <!-- <form action="/procesarF" method="POST">
         <label>Nombre:</label>
-        <input type="number" name="nombrexyz">
+        <input type="text" name="nombrexyz">
         <button type="submit">ENVIAR</button>
     </form> -->
-    <form action="{{url_for('procesarUnico')}}" method="POST">
+    <form action="{{url_for('procesarU')}}" method="POST">
         <label>Nombre:</label>
-        <input type="text" name="nombrexyz">
+        <input type="text" name="nombre">
         <button type="submit">ENVIAR</button>
     </form>
     
-    <h1>{{base}}</h1>
-    
+    <h1>{{nombre}}</h1>
+
+
 </body>
 </html>

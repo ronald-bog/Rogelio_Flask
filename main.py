@@ -20,15 +20,16 @@ def procesarF():
     return f"El tipo de dato es:  {tipo}"
 
 @app.route("/procesarUnico", methods=["GET","POST"])
-def procesarUnico():
-    base = True
+def procesarU():
     nombre = None
     if request.method == "POST":
-        nombre = request.form["nombrexyz"]
-    return render_template("index.html", base = nombre)
+        nombre = request.form["nombre"]
+    return render_template("index.html", nombre = nombre)
 
 
 if __name__ == "__main__":
     app.run(host="127.0.0.96", port=3996, debug=True)
+    
+    #
 
 # Fin Mayo 5
