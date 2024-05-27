@@ -6,7 +6,28 @@ main2 = Blueprint("main2", __name__)
 @main2.route("/form")
 def formulario():
     base = False
-    return render_template("index.html", base=base)
+    lista = [
+        "Rogelio",
+        "Ana",
+        "Sofia",
+        "Luis",
+        "Nestor",
+        "Vicente",
+        "sgsdfg",
+        "yhrty",
+        "iki",
+        "fdgdf",
+        "rtyuty",
+        "tyutyu",
+        "56456",
+        "574",
+        "gujyt",
+        "ghj",
+        "ghjgh",
+        "ghjk",
+    ]
+    nuevaVar = True
+    return render_template("index.html", base=base, arreglo=lista, nuevaVar=nuevaVar)
 
 
 @main2.route("/procesarF", methods=["POST"])

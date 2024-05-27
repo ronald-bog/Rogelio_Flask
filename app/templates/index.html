@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FORMULARIO</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <form action="/procesarF" method="POST">
-        <label>Nombre:</label>
-        <input type="text" name="nombrexyz">
-        <button type="submit">ENVIAR</button>
+      <label>Nombre:</label>
+      <input type="text" name="nombrexyz" />
+      <button type="submit">ENVIAR</button>
     </form>
-
-    {% if base %}
+    <!-- {% if base %}
     <h1>Si se cumplio...............</h1>
+    {%endif%} -->
+    {% if nuevaVar %}
+    <ul>
+      {% for i in arreglo %}
+      <li>{{i}}</li>
+      {% endfor %}
+    </ul>
     {%endif%}
 
-</body>
+    <h3>DESPUES DEL IF DE JINJA</h3>
 
+    <p>Como esta el clima........</p>
+  </body>
 </html>
-
-#jinja2
